@@ -44,6 +44,26 @@
       color: #FFFFFF;
       margin-bottom: 0;
     }
+    /* Adaptación perfecta para pantallas de celulares */
+    @media (max-width: 768px) {
+      .carousel-item,
+      .carousel-item img {
+        height: 320px;
+      }
+      .carousel-caption {
+        bottom: 12px;
+        left: 5%;
+        right: 5%;
+        padding: 8px 12px;
+      }
+      .carousel-caption h2 {
+        font-size: 1.05rem;
+        margin-bottom: 2px;
+      }
+      .carousel-caption p {
+        font-size: 0.8rem;
+      }
+    }
     /* Altura consistente para las fotos del catálogo de productos */
     .card-img-top {
       height: 230px;
@@ -138,7 +158,7 @@
         <!-- Diapositiva 1: Blanquito en Torre -->
         <div class="carousel-item active" data-bs-interval="3000">
           <img src="blanquito.jpg" class="d-block" alt="Blanquito descansando en su rascador">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+          <div class="carousel-caption d-block rounded">
             <h2 class="fw-bold text-warning">¡Bienvenidos a Felimiau! 🐾</h2>
             <p class="lead mb-0">Blanquito te da la bienvenida a nuestra tienda especializada en gatos.</p>
           </div>
@@ -147,7 +167,7 @@
         <!-- Diapositiva 2: Talia Acurrucada -->
         <div class="carousel-item" data-bs-interval="3000">
           <img src="talia.jpg" class="d-block" alt="Talia descansando cómoda en su cama">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+          <div class="carousel-caption d-block rounded">
             <h2 class="fw-bold text-warning">Camas Térmicas con Talia 🧶</h2>
             <p class="lead mb-0">Espacios suaves y antiestrés aprobados por Talia para sus mejores siestas.</p>
           </div>
@@ -156,7 +176,7 @@
         <!-- Diapositiva 3: Rascadores y Nutrición -->
         <div class="carousel-item" data-bs-interval="3000">
           <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&h=600&q=80" class="d-block" alt="Gatito mirando a la cámara">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+          <div class="carousel-caption d-block rounded">
             <h2 class="fw-bold text-warning">Rascadores, Torres & Nutrición Premium 🐟</h2>
             <p class="lead mb-0">Los mejores alimentos y juguetes interactivos al mejor precio.</p>
           </div>
@@ -332,7 +352,6 @@
       <div class="row align-items-center">
         <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
           <h5 class="fw-bold text-warning mb-1">🐱 Felimiau - Especialistas en Gatos</h5>
-          <p class="small text-white-50 mb-0">Desarrollo Frontend I (PFY2201) - Semana 4: Diseño Responsivo con Bootstrap 5</p>
         </div>
         <div class="col-12 col-md-6 text-center text-md-end">
           <p class="mb-0 text-white">&copy; 2026 Felimiau. Todos los derechos reservados.</p>
