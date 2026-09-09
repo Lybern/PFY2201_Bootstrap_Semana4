@@ -12,9 +12,9 @@
 
   <!-- Estilos visuales personalizados -->
   <style>
-    /* Ajuste de carrusel: Fondo oscuro y object-fit contain para que las fotos NUNCA se corten */
+    /* Ajuste de carrusel: Fondo claro con amarillo cálido para que combine con Felimiau */
     .carousel-item {
-      background-color: #18181b;
+      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
       height: 480px;
       text-align: center;
     }
@@ -24,7 +24,15 @@
       max-width: 100%;
       object-fit: contain;
       margin: 0 auto;
-      filter: brightness(0.95);
+    }
+    /* Cuadro de texto con borde amarillo y fondo legible */
+    .carousel-caption {
+      bottom: 20px;
+      background: rgba(33, 37, 41, 0.85);
+      backdrop-filter: blur(4px);
+      border-radius: 12px;
+      padding: 12px 20px;
+      border: 2px solid #ffc107;
     }
     /* Altura consistente para las fotos del catálogo de productos */
     .card-img-top {
@@ -260,7 +268,7 @@
       <!-- Producto 6: Arena Sanitaria -->
       <article class="col-12 col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm border-0">
-          <img src="https://images.unsplash.com/photo-1513360309081-38f076278f1e?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top" alt="Gato aseado y limpio">
+          <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=600&h=350&q=80" class="card-img-top" alt="Gato blanco limpio y aseado">
           <div class="card-body d-flex flex-column">
             <span class="badge bg-secondary align-self-start mb-2">Higiene & Aseo</span>
             <h5 class="card-title fw-bold text-dark">Arena Aglomerante Lavanda 10kg</h5>
