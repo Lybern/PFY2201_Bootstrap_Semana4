@@ -12,9 +12,9 @@
 
   <!-- Estilos visuales personalizados -->
   <style>
-    /* Ajuste de carrusel: Fondo claro con amarillo cálido para que combine con Felimiau */
+    /* Ajuste de carrusel: Fondo claro amarillo suave cálido (#FEF9C3) */
     .carousel-item {
-      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+      background-color: #FEF9C3;
       height: 480px;
       text-align: center;
     }
@@ -25,14 +25,24 @@
       object-fit: contain;
       margin: 0 auto;
     }
-    /* Cuadro de texto con borde amarillo y fondo legible */
+    /* Cuadro de texto con borde dorado y fondo oscuro translúcido como en la captura */
     .carousel-caption {
-      bottom: 20px;
-      background: rgba(33, 37, 41, 0.85);
+      bottom: 25px;
+      left: 10%;
+      right: 10%;
+      background: rgba(45, 52, 58, 0.78);
       backdrop-filter: blur(4px);
-      border-radius: 12px;
-      padding: 12px 20px;
-      border: 2px solid #ffc107;
+      border-radius: 6px;
+      padding: 14px 24px;
+      border: 2px solid #FACC15;
+    }
+    .carousel-caption h2 {
+      color: #FACC15;
+      font-weight: 700;
+    }
+    .carousel-caption p {
+      color: #FFFFFF;
+      margin-bottom: 0;
     }
     /* Altura consistente para las fotos del catálogo de productos */
     .card-img-top {
